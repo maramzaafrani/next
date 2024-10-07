@@ -1,0 +1,96 @@
+/* styles/globals.css */
+
+/* Reset de marges et de paddings pour une mise en page uniforme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; /* Utiliser une police moderne */
+    background-color: #f4f7fa; /* Couleur de fond douce */
+    color: #333; /* Couleur de texte */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu horizontalement */
+    justify-content: center; /* Centre le contenu verticalement */
+    min-height: 100vh; /* Hauteur minimale */
+    line-height: 1.6; /* Améliore la lisibilité */
+  }
+  
+  h1 {
+    color: #333; /* Couleur des titres */
+    margin-bottom: 20px; /* Espacement en dessous du titre */
+    font-size: 2.5rem; /* Taille de police plus grande pour les titres */
+  }
+  
+  h2 {
+    color: #4285f4; /* Couleur pour les sous-titres */
+    font-size: 1.5rem; /* Taille de police pour les sous-titres */
+  }
+  
+  button {
+    padding: 12px 25px; /* Plus de padding pour les boutons */
+    font-size: 16px;
+    color: white;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Animation au survol */
+    margin-top: 10px; /* Espacement entre les boutons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour les boutons */
+  }
+  
+  button:hover {
+    background-color: #357ae8; /* Couleur de fond au survol */
+    transform: translateY(-2px); /* Légère élévation au survol */
+  }
+  
+  input {
+    margin: 10px 0; /* Espacement vertical pour les champs de saisie */
+    padding: 10px;
+    width: 100%; /* Largeur 100% pour les champs de saisie */
+    max-width: 400px; /* Largeur maximale */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 5px; /* Coins arrondis */
+    transition: border-color 0.3s; /* Transition pour la couleur de la bordure */
+  }
+  
+  input:focus {
+    border-color: #4285f4; /* Couleur de bordure lors du focus */
+    outline: none; /* Retirer le contour par défaut */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; /* Colonne pour les champs de saisie */
+    align-items: center; /* Centre les éléments */
+  }
+  
+  p {
+    margin-top: 20px; /* Espacement entre les éléments */
+    color: #d9534f; /* Couleur des messages d'erreur */
+    font-weight: bold; /* Texte en gras pour les messages d'erreur */
+  }
+  
+  .container {
+    padding: 20px; /* Ajout de padding autour du contenu */
+    background-color: white; /* Couleur de fond blanche pour le conteneur */
+    border-radius: 8px; /* Coins arrondis pour le conteneur */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour le conteneur */
+    max-width: 500px; /* Largeur maximale pour le conteneur */
+    width: 90%; /* Largeur à 90% */
+    margin: 20px; /* Marge autour du conteneur */
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem; /* Ajustement de la taille du titre pour les petits écrans */
+    }
+    button {
+      width: 100%; /* Boutons pleins sur petits écrans */
+    }
+  }
+  

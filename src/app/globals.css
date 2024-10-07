@@ -1,42 +1,53 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Profile.module.css */
+
+.container {
+  max-width: 600px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrer le conteneur */
+  padding: 20px; /* Espacement intérieur */
+  background-color: #f9f9f9; /* Couleur de fond */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h1 {
+  text-align: center; /* Centrer le titre */
+  color: #333; /* Couleur du texte */
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+form {
+  display: flex; /* Utiliser Flexbox */
+  flex-direction: column; /* Colonne pour les champs */
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+input {
+  margin-bottom: 15px; /* Espacement entre les champs */
+  padding: 10px; /* Espacement intérieur */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 4px; /* Coins arrondis */
+  font-size: 16px; /* Taille de police */
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+input:focus {
+  border-color: #007bff; /* Couleur de la bordure au focus */
+  outline: none; /* Enlever le contour par défaut */
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+button {
+  padding: 10px; /* Espacement intérieur */
+  background-color: #007bff; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border: none; /* Enlever la bordure */
+  border-radius: 4px; /* Coins arrondis */
+  font-size: 16px; /* Taille de police */
+  cursor: pointer; /* Curseur pointer sur le bouton */
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+.message {
+  margin-top: 15px; /* Espacement au-dessus du message */
+  color: #d9534f; /* Couleur du texte du message */
+  text-align: center; /* Centrer le texte du message */
 }
