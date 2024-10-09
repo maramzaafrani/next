@@ -1,4 +1,3 @@
-// pages/api/user.js
 export default function handler(req, res) {
   // Simuler une base de données utilisateur
   let user = {

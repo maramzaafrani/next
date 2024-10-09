@@ -2,137 +2,95 @@
 
 /* Reset de marges et de paddings pour une mise en page uniforme */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Style de base pour le body */
-body {
-  font-family: 'Roboto', sans-serif; /* Utilisation d'une police moderne */
-  background-color: #f4f7fa; /* Couleur de fond douce */
-  color: #333; /* Couleur du texte */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centre horizontalement */
-  justify-content: center; /* Centre verticalement */
-  min-height: 100vh; /* Hauteur minimale pour occuper toute la fenêtre */
-  line-height: 1.6; /* Améliore la lisibilité */
-}
-
-/* Style des titres */
-h1 {
-  color: #333; /* Couleur des titres */
-  margin-bottom: 20px; /* Espacement sous le titre */
-  font-size: 2.5rem; /* Taille du texte */
-  text-align: center; /* Centre le titre */
-}
-
-h2 {
-  color: #4285f4; /* Couleur des sous-titres */
-  font-size: 1.5rem; /* Taille de police */
-  text-align: center; /* Centre les sous-titres */
-}
-
-/* Style des boutons */
-button {
-  padding: 14px 30px; /* Augmenter le padding pour les boutons */
-  font-size: 16px;
-  color: white;
-  background-color: #4285f4;
-  border: none;
-  border-radius: 8px; /* Coins arrondis */
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s; /* Effet au survol */
-  margin-top: 15px; /* Espacement au-dessus des boutons */
-  width: 200px; /* Largeur du bouton */
-  text-align: center; /* Centrer le texte à l'intérieur du bouton */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
-}
-
-/* Effet au survol du bouton */
-button:hover {
-  background-color: #357ae8; /* Couleur au survol */
-  transform: translateY(-3px); /* Légère élévation */
-}
-
-/* Style des champs de saisie */
-input {
-  margin: 12px 0; /* Espacement vertical */
-  padding: 12px;
-  width: 100%; /* Largeur à 100% */
-  max-width: 450px; /* Largeur maximale */
-  border: 1px solid #ccc; /* Bordure */
-  border-radius: 8px; /* Coins arrondis */
-  transition: border-color 0.3s; /* Transition sur la couleur de bordure */
-}
-
-/* Effet au focus sur les champs de saisie */
-input:focus {
-  border-color: #4285f4; /* Bordure bleue au focus */
-  outline: none; /* Retirer le contour par défaut */
-}
-
-/* Style du formulaire */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centre les éléments */
-  width: 100%;
-  max-width: 500px; /* Limite la largeur du formulaire */
-  margin: 20px 0; /* Espacement autour du formulaire */
-}
-
-/* Style du message d'erreur ou de succès */
-p {
-  margin-top: 20px; /* Espacement entre le formulaire et le message */
-  color: #d9534f; /* Couleur des messages d'erreur */
-  font-weight: bold; /* Texte en gras */
-  text-align: center; /* Centrer le texte */
-}
-
-/* Style du conteneur pour mieux organiser le contenu */
-.container {
-  padding: 30px; /* Plus de padding autour du contenu */
-  background-color: white; /* Fond blanc */
-  border-radius: 12px; /* Coins arrondis pour le conteneur */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Ombre pour le conteneur */
-  width: 90%; /* Largeur de 90% */
-  max-width: 500px; /* Largeur maximale */
-  margin: 20px; /* Marge autour du conteneur */
-}
-
-/* Responsivité pour les petits écrans */
-@media (max-width: 600px) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; /* Utiliser une police moderne */
+    background-color: #f4f7fa; /* Couleur de fond douce */
+    color: #333; /* Couleur de texte */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu horizontalement */
+    justify-content: center; /* Centre le contenu verticalement */
+    min-height: 100vh; /* Hauteur minimale */
+    line-height: 1.6; /* Améliore la lisibilité */
+  }
+  
   h1 {
-      font-size: 2rem; /* Ajuste la taille du titre pour les petits écrans */
+    color: #333; /* Couleur des titres */
+    margin-bottom: 20px; /* Espacement en dessous du titre */
+    font-size: 2.5rem; /* Taille de police plus grande pour les titres */
   }
-
+  
+  h2 {
+    color: #4285f4; /* Couleur pour les sous-titres */
+    font-size: 1.5rem; /* Taille de police pour les sous-titres */
+  }
+  
   button {
-      width: 100%; /* Le bouton prend toute la largeur */
+    padding: 12px 25px; /* Plus de padding pour les boutons */
+    font-size: 16px;
+    color: white;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Animation au survol */
+    margin-top: 10px; /* Espacement entre les boutons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour les boutons */
   }
-
-  .container {
-      padding: 20px; /* Réduire le padding du conteneur */
-      width: 95%; /* Largeur de 95% pour le conteneur */
+  
+  button:hover {
+    background-color: #357ae8; /* Couleur de fond au survol */
+    transform: translateY(-2px); /* Légère élévation au survol */
   }
-
+  
   input {
-      max-width: 100%; /* Les champs de saisie prennent toute la largeur */
+    margin: 10px 0; /* Espacement vertical pour les champs de saisie */
+    padding: 10px;
+    width: 100%; /* Largeur 100% pour les champs de saisie */
+    max-width: 400px; /* Largeur maximale */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 5px; /* Coins arrondis */
+    transition: border-color 0.3s; /* Transition pour la couleur de la bordure */
   }
-}
-
-/* Ajout d'une section pour les images dans le conteneur */
-.container img {
-  width: 100%; /* S'assurer que l'image prend toute la largeur */
-  border-radius: 8px; /* Coins arrondis pour les images */
-  margin-top: 20px; /* Espacement entre le texte et l'image */
-}
-
-/* Style des paragraphes pour une meilleure présentation */
-.container p {
-  font-size: 1.1rem; /* Taille de police légèrement plus grande pour les paragraphes */
-  color: #555; /* Couleur de texte plus claire pour les paragraphes */
-  line-height: 1.8; /* Augmenter l'espacement entre les lignes */
-  text-align: justify; /* Justifier le texte pour une meilleure lisibilité */
-}
+  
+  input:focus {
+    border-color: #4285f4; /* Couleur de bordure lors du focus */
+    outline: none; /* Retirer le contour par défaut */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; /* Colonne pour les champs de saisie */
+    align-items: center; /* Centre les éléments */
+  }
+  
+  p {
+    margin-top: 20px; /* Espacement entre les éléments */
+    color: #d9534f; /* Couleur des messages d'erreur */
+    font-weight: bold; /* Texte en gras pour les messages d'erreur */
+  }
+  
+  .container {
+    padding: 20px; /* Ajout de padding autour du contenu */
+    background-color: white; /* Couleur de fond blanche pour le conteneur */
+    border-radius: 8px; /* Coins arrondis pour le conteneur */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour le conteneur */
+    max-width: 500px; /* Largeur maximale pour le conteneur */
+    width: 90%; /* Largeur à 90% */
+    margin: 20px; /* Marge autour du conteneur */
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem; /* Ajustement de la taille du titre pour les petits écrans */
+    }
+    button {
+      width: 100%; /* Boutons pleins sur petits écrans */
+    }
+  }
+  
